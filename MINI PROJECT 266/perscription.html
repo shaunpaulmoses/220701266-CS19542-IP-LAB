@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #87CEEB; /* Sky blue */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 80%;
+            max-width: 800px;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            text-align: center;
+            padding: 12px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; /* Light gray on hover */
+        }
+
+        select {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            border: 1px solid #00796B;
+            border-radius: 8px;
+            background-color: #E0F7FA;
+            font-size: 1rem;
+            padding: 8px;
+            color: darkblue;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        select:focus {
+            border-color: #004D40; /* Darker shade on focus */
+        }
+
+        .submit-button {
+            background-color: #00796B;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #004D40; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>JOY'S DENTAL CLINIC</h1>
+    <h2>Prescription</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Medicine</th>
+                <th>Medicine Name</th>
+                <!-- <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Night</th> -->
+                <th colspan="3">When to Take</th>
+                <th>Timing</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Antibiotic</td>
+                <td>
+                    <select>
+                        <option>Null</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Morning</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Afternoon</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Night</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>Before Food</option>
+                        <option>After Food</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Anti Inflammatory</td>
+                <td>
+                    <select>
+                        <option>Null</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Morning</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Afternoon</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Night</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>Before Food</option>
+                        <option>After Food</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Painkiller</td>
+                <td>
+                    <select>
+                        <option>Null</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Morning</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Afternoon</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>-----------</option>
+                        <option>Night</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>Before Food</option>
+                        <option>After Food</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>New Patient</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1E90FF; /* Sky blue background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 15px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            color: #00796B;
+        }
+
+        input[type="text"], input[type="textarea"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #00796B;
+            border-radius: 8px;
+            background-color: #E0F7FA;
+            color: #333;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="textarea"]:focus {
+            border-color: #004D40;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #00796B;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004D40;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            td {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            input[type="submit"] {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Joy's Dental Clinic</h1>
+        <form id="f1" action="newpat.php">
+            <table>
+                <tr>
+                    <td><label for="name">Patient ID</label></td>
+                    <td><input type="text" id="id" name="id" required></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Patient Name</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="text" id="age" name="age" required></td>
+                </tr>
+                <tr>
+                    <td><label for="sex">Gender</label></td>
+                    <td><input type="text" id="sex" name="sex" required></td>
+                </tr>
+                <tr>
+                    <td><label for="con">Contact</label></td>
+                    <td><input type="text" id="con" name="con" required></td>
+                </tr>
+                <tr>
+                    <td><label for="d/t">Treatment</label></td>
+                    <td><input type="textarea" id="d/t" name="d/t" required></td>
+                </tr>
+                <tr>
+                    <td><label>Total Cost</label></td>
+                    <td><input type="text" name="tc" required></td>
+                </tr>
+                <tr>
+                    <td><label>Amount Paid</label></td>
+                    <td><input type="text" name="ap" required></td>
+                </tr>
+            </table>
+            <input type="submit" value="Enter Details">
+        </form>
+    </center>     
+</body>
+</html>
