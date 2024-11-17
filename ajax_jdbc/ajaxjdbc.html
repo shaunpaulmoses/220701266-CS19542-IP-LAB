@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table,td,th{
+             border: solid black;
+             border-collapse: collapse;
+        }
+    </style>
+    <form name="f1">
+        <label name="r" id="r">Roll Number</label> <input type="text" id="r" name="r">
+        <input type="button"  value="GET DETAILS" onclick="findroll(f1.r.value)">
+    </form>
+    <div id="d"> STUDENT INFO<br></div>
+    <script>
+        function findroll(reg){
+            if (reg == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+              }
+            var xhttp
+            xhttp=new XMLHttpRequest();
+            xhttp.onreadystatechange=function(){
+                if(this.status==200 && this.readyState==4){
+                    document.getElementById("d").innerHTML=this.responseText;
+                } 
+            }
+            xhttp.open('GET','getroll.php?q='+reg , true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

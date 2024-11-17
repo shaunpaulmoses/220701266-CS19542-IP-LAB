@@ -1,0 +1,13 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('blue.jpg'); /* Add your image here */
+    background-size: cover; /* Adjusts the image to cover the entire body */
+    background-position: center; /* Centers the image */
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

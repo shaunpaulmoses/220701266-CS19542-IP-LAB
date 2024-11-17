@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Record</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1E90FF; /* Blue background color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            color: #00796B;
+        }
+
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #00796B;
+            border-radius: 8px;
+            background-color: #E0F7FA;
+            color: #333;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #004D40;
+        }
+
+        input[type="submit"] {
+            background-color: #00796B;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004D40;
+        }
+
+        .form-footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .form-footer input {
+            width: auto;
+            padding: 10px 20px;
+        }
+
+        @media (max-width: 768px) {
+            form {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            td {
+                font-size: 1rem;
+            }
+
+            input[type="submit"] {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Joy's Dental Clinic</h1>
+        <form action="pat_rec.php">
+            <table>
+                <tr>
+                    <td><label>Enter Patient Id</label></td>
+                    <td><input type="text" name="id" required></td>
+                </tr>
+            </table>
+            <input type="submit" value="Get Details">
+        </form>
+        <div class="form-footer">
+            <form action="admin_homepage.html">
+                <input type="submit" value="Home Page">
+            </form>
+        </div>
+    </center>
+</body>
+</html>

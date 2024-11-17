@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AJAX</title>
+    <script>
+        function loadXMLDoc(){
+         var x = new XMLHttpRequest();
+         x.onload=function(){
+                document.getElementById('d').innerHTML=this.responseText;
+            }
+            x.open('GET','text.txt',true);
+            x.send();        
+        }
+    </script>
+</head>
+<body>
+    <h1>AJAX</h1>
+    <br>
+    <button type="button" onclick="loadXMLDoc()">GET TEXT</button>
+    <br>
+    <br>
+    <div id="d">
+
+    </div>
+</body>
+</html>

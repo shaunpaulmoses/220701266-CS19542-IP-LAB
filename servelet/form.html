@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        .t1{
+            
+            color: #000000df;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            font-weight: bolder;
+            text-align: center;
+        }
+        input{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            border: none;
+            background-color: black;
+            font-size: large;
+            color: aliceblue;
+        }
+        select{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            border: none;
+            background-color: black;
+            font-size: large;
+            color: aliceblue;
+        }
+
+        .end{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            background-color: darkgreen;
+            border: none;
+            color: aliceblue;
+            font-size: large;
+        }
+        .date{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            border: none;
+            background-color: black;
+            font-size: large;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body style="background-color: darkgreen;">
+    <br>
+    <br>
+    <br>
+    <form action="Dbser.java">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <label for="rn">Roll Number</label>
+        <input type="Text" id="rn" name="rn">
+        <br>
+        <br>
+        <label for="dep">Department</label>
+        <input type="text" id="dep" name="dep" >
+        <br>
+        <br>
+         Year
+        <select name="year" id="year"  >
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+        </select>
+        <br>
+        <br>
+     
+        <input type="submit" value="SUBMIT" style="font-family: 'Times New Roman', Times, serif;" class="end">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="reset" value="RESET" style="font-family: 'Times New Roman', Times, serif;" class="end" >
+    </form>
+
+</body>
+</html>
